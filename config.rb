@@ -1,3 +1,4 @@
+require "slim"
 require "extensions/views"
 
 activate :views
