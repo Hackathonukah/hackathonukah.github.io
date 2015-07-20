@@ -1,19 +1,18 @@
 body {
-  background-color: white;
-  color: $dark-gray;
+  background-color: black;
+  color: white;
 }
 
-.delete-me {
-  @include align-items(center);
-  @include display(flex);
-  @include justify-content(center);
-  height: 100vh;
-
-  .container {
-    text-align: center;
-
-    h1 {
-      font-weight: 200;
-    }
-  }
+.content-wrapper {
+  @include clearfix;
+  @include outer-container;
 }
+
+.section {
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+
+// .content {
+//   @include outer-container;
+// }
