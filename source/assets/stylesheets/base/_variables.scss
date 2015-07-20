@@ -1,9 +1,16 @@
 // Typography
-$base-font-family: $helvetica;
-$heading-font-family: $base-font-family;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import "../vendor/novecento-sans";
+$base-font-family: "Open Sans", $helvetica;
+$heading-font-family: Novecentosanswide-Medium, $base-font-family;
+@import "font-awesome";
 
 // Font Sizes
 $base-font-size: 1em;
+
+// Font Weights
+$base-font-weight: 400;
+$heading-font-weight: 600;
 
 // Line height
 $base-line-height: 1.5;
@@ -16,7 +23,8 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #477dca;
+$orange: #EA6723;
+$blue: #428BCA;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
