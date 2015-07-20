@@ -1,3 +1,7 @@
+@import "bourbon";
+@import "base/variables";
+@import "neat";
+
 header.navigation {
   $base-border-color: gainsboro !default;
   $base-border-radius: 3px !default;
@@ -291,7 +295,7 @@ header.navigation {
       position: relative;
 
       input[type=search] {
-        @include box-sizing(border-box);
+        // @include box-sizing(border-box);
         background: $navigation-search-background;
         border-radius: $base-border-radius * 2;
         border: $navigation-search-border;
@@ -333,7 +337,7 @@ header.navigation {
       width: 16em;
 
       input {
-        @include box-sizing(border-box);
+        // @include box-sizing(border-box);
         display: block;
       }
     }
