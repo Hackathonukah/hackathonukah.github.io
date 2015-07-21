@@ -13,8 +13,6 @@ html
 
     = stylesheet_link_tag "application", (data.page.stylesheet ? data.page.stylesheet : {})
   body class=page_classes
-    = partial "partials/header"
     .content
       = yield
-    = partial "partials/footer"
     = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js", "application"
