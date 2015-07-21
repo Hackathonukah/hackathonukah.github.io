@@ -26,6 +26,10 @@ activate :deploy do |deploy|
   deploy.branch = "master"
 end
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-52273145-3'
+end
+
 helpers do
   def nav_link(link_text, page_url, options = {})
     options[:class] ||= ""
