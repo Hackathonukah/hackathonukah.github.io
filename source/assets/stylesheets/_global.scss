@@ -1,18 +1,65 @@
 body {
-  background-color: black;
+  background-color: $dark-gray;
   color: white;
 }
 
-.content-wrapper {
-  @include clearfix;
+.coming-soon {
   @include outer-container;
+  @include align-items(center);
+  @include display(flex);
+  @include justify-content(center);
+  height: 100vh;
+
+  .container {
+    text-align: center;
+
+    h1,h2 {
+      font-family: $base-font-family;
+      font-weight: 200;
+      color: white;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+
+    #mailing-list-btn {
+      font-size: 1.5em;
+    }
+
+    .last-year {
+      font-size: 0.8em;
+    }
+  }
 }
 
-.section {
-  padding-top: 3em;
-  padding-bottom: 2em;
-}
+.btn {
+  @include appearance(none);
+  -webkit-font-smoothing: antialiased;
+  background-color: $orange;
+  border-radius: $base-border-radius;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
 
-// .content {
-//   @include outer-container;
-// }
+  &:hover,
+  &:focus {
+    background-color: darken($orange, 15%);
+    color: #fff;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
