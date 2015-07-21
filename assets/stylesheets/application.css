@@ -5,7 +5,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 @import url("//hello.myfonts.net/count/2c6cb1");
 /* line 10, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/vendor/normalize.css */
 html {
@@ -2779,7 +2779,7 @@ button {
   appearance: none;
   -webkit-font-smoothing: antialiased;
   background-color: #428BCA;
-  border-radius: 3px;
+  border-radius: 0px;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -2837,7 +2837,7 @@ select[multiple=multiple],
 textarea {
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 3px;
+  border-radius: 0px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
@@ -2998,380 +2998,93 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-/* line 4, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/parallax.scss */
-.parallax-window {
-  max-height: 40em;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  width: 100%; }
-
-/* line 12, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/parallax.scss */
-.parallax-static-content {
-  padding: 8em 0;
-  position: relative;
-  z-index: 9; }
-
-/* line 18, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/parallax.scss */
-.parallax-background {
-  background: url("/assets/images/menorah.jpg") repeat;
-  background-position: top;
-  background-size: cover;
-  background-color: beige;
-  height: 80em;
-  left: 0;
-  position: absolute;
-  top: -13.33333em;
-  width: 100%; }
-
 /* line 1, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
 body {
-  background-color: black;
+  background-color: #333;
   color: white; }
 
 /* line 6, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
-.content-wrapper {
+.coming-soon {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  height: 100vh; }
   /* line 20, /home/oren/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bourbon-4.2.3/app/assets/stylesheets/addons/_clearfix.scss */
-  .content-wrapper::after {
+  .coming-soon::after {
     clear: both;
     content: "";
     display: table; }
-  /* line 20, /home/oren/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bourbon-4.2.3/app/assets/stylesheets/addons/_clearfix.scss */
-  .content-wrapper::after {
-    clear: both;
-    content: "";
-    display: table; }
+  /* line 13, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
+  .coming-soon .container {
+    text-align: center; }
+    /* line 16, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
+    .coming-soon .container h1, .coming-soon .container h2 {
+      font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+      font-weight: 200;
+      color: white; }
+    /* line 22, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
+    .coming-soon .container h1 {
+      font-size: 2em; }
+    /* line 26, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
+    .coming-soon .container #mailing-list-btn {
+      font-size: 1.5em; }
+    /* line 30, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
+    .coming-soon .container .last-year {
+      font-size: 0.8em; }
 
-/* line 11, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
-.section {
-  padding-top: 3em;
-  padding-bottom: 2em; }
-
-/* line 5, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-header.navigation {
-  background-color: white;
-  border-bottom: 1px solid #e6e6e6;
-  min-height: 75px;
-  margin-top: 25px;
-  width: 100%;
-  z-index: 999;
-  position: fixed;
-  font-family: Novecentosanswide-Medium, "Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
-  /* line 36, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-  header.navigation .navigation-wrapper {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    z-index: 9999; }
-    /* line 20, /home/oren/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bourbon-4.2.3/app/assets/stylesheets/addons/_clearfix.scss */
-    header.navigation .navigation-wrapper::after {
-      clear: both;
-      content: "";
-      display: table; }
-    /* line 20, /home/oren/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bourbon-4.2.3/app/assets/stylesheets/addons/_clearfix.scss */
-    header.navigation .navigation-wrapper::after {
-      clear: both;
-      content: "";
-      display: table; }
-  /* line 43, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-  header.navigation .logo {
-    float: left;
-    max-height: 75px;
-    padding-left: 1em;
-    padding-right: 2em; }
-    /* line 49, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-    header.navigation .logo img {
-      max-height: 75px;
-      position: relative;
-      top: -25px; }
-  /* line 59, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-  header.navigation .navigation-menu-button {
-    color: #999;
-    display: block;
-    float: right;
-    font-weight: 700;
-    line-height: 75px;
-    margin: 0;
-    padding-right: 1em;
-    text-transform: uppercase; }
-    @media screen and (min-width: 53.75em) {
-      /* line 59, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-      header.navigation .navigation-menu-button {
-        display: none; } }
-    /* line 73, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-    header.navigation .navigation-menu-button:focus, header.navigation .navigation-menu-button:hover {
-      color: #333; }
-  /* line 81, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-  header.navigation nav {
-    float: none;
-    min-height: 75px;
-    z-index: 9999999; }
-    @media screen and (min-width: 53.75em) {
-      /* line 81, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-      header.navigation nav {
-        float: right; } }
-  /* line 90, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-  header.navigation ul.navigation-menu {
-    -webkit-transform-style: preserve-3d;
-    clear: both;
-    display: none;
-    margin: 0 auto;
-    overflow: visible;
-    padding: 0;
-    width: 100%;
-    z-index: 9999; }
-    /* line 100, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-    header.navigation ul.navigation-menu.show {
-      display: block; }
-    @media screen and (min-width: 53.75em) {
-      /* line 90, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-      header.navigation ul.navigation-menu {
-        display: inline;
-        margin: 0;
-        padding: 0; } }
-  /* line 113, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-  header.navigation ul li.nav-link {
-    background: white;
-    display: block;
-    line-height: 75px;
-    overflow: hidden;
-    padding-right: 0.8em;
-    text-align: right;
-    width: 100%;
-    z-index: 9999; }
-    @media screen and (min-width: 53.75em) {
-      /* line 113, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-      header.navigation ul li.nav-link {
-        background: transparent;
-        display: inline;
-        line-height: 75px;
-        text-decoration: none;
-        width: auto; } }
-    /* line 131, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-    header.navigation ul li.nav-link a {
-      color: #999;
-      display: inline-block;
-      font-weight: 400;
-      text-decoration: none; }
-      @media screen and (min-width: 53.75em) {
-        /* line 131, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-        header.navigation ul li.nav-link a {
-          padding-right: 1em; } }
-      /* line 141, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-      header.navigation ul li.nav-link a:focus, header.navigation ul li.nav-link a:hover {
-        color: #333; }
-  /* line 148, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-  header.navigation .active-nav-item a {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    padding-bottom: 3px; }
-  /* line 155, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-  header.navigation li.more.nav-link {
-    padding-right: 0; }
-    @media screen and (min-width: 53.75em) {
-      /* line 155, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-      header.navigation li.more.nav-link {
-        padding-right: 1em; } }
-    /* line 162, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-    header.navigation li.more.nav-link > ul > li:first-child a {
-      padding-top: 1em; }
-    /* line 166, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-    header.navigation li.more.nav-link a {
-      margin-right: 1em; }
-    /* line 170, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-    header.navigation li.more.nav-link > a {
-      padding-right: 0.6em; }
-    /* line 174, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-    header.navigation li.more.nav-link > a:after {
-      position: absolute;
-      top: auto;
-      right: -0.4em;
-      bottom: auto;
-      left: auto;
-      content: '\25BE';
-      color: #999; }
-  /* line 181, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-  header.navigation li.more {
-    overflow: visible;
-    padding-right: 0; }
-    /* line 185, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-    header.navigation li.more a {
-      padding-right: 0.8em; }
-    /* line 189, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-    header.navigation li.more > a {
-      padding-right: 1.6em;
-      position: relative; }
-      @media screen and (min-width: 53.75em) {
-        /* line 189, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-        header.navigation li.more > a {
-          margin-right: 1em; } }
-      /* line 197, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-      header.navigation li.more > a:after {
-        content: '›';
-        font-size: 1.2em;
-        position: absolute;
-        right: 0.5em; }
-    /* line 205, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-    header.navigation li.more:focus > .submenu, header.navigation li.more:hover > .submenu {
-      display: block; }
-    @media screen and (min-width: 53.75em) {
-      /* line 181, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-      header.navigation li.more {
-        padding-right: 0.8em;
-        position: relative; } }
-  /* line 216, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-  header.navigation ul.submenu {
-    display: none;
-    padding-left: 0; }
-    @media screen and (min-width: 53.75em) {
-      /* line 216, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-      header.navigation ul.submenu {
-        left: -1em;
-        position: absolute;
-        top: 1.5em; } }
-    @media screen and (min-width: 53.75em) {
-      /* line 226, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-      header.navigation ul.submenu .submenu {
-        left: 11.8em;
-        top: 0; } }
-    /* line 233, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-    header.navigation ul.submenu li {
-      display: block;
-      padding-right: 0; }
-      @media screen and (min-width: 53.75em) {
-        /* line 233, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-        header.navigation ul.submenu li {
-          line-height: 57.69231px; }
-          /* line 240, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-          header.navigation ul.submenu li:first-child > a {
-            border-top-left-radius: 3px;
-            border-top-right-radius: 3px; }
-          /* line 245, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-          header.navigation ul.submenu li:last-child > a {
-            border-bottom-left-radius: 3px;
-            border-bottom-right-radius: 3px;
-            padding-bottom: 0.7em; } }
-      /* line 252, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-      header.navigation ul.submenu li a {
-        background-color: #f7f7f7;
-        display: inline-block;
-        text-align: right;
-        width: 100%; }
-        @media screen and (min-width: 53.75em) {
-          /* line 252, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-          header.navigation ul.submenu li a {
-            background-color: white;
-            padding-left: 1em;
-            text-align: left;
-            width: 12em; } }
-  /* line 270, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-  header.navigation .navigation-tools {
-    background: #505050;
-    clear: both;
-    display: block;
-    height: 75px; }
-    @media screen and (min-width: 53.75em) {
-      /* line 270, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-      header.navigation .navigation-tools {
-        background: transparent;
-        clear: none;
-        float: right; } }
-  /* line 285, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-  header.navigation .search-bar {
-    float: left;
-    padding: 0.85em 0.85em 0.7em 0.6em;
-    width: 60%; }
-    /* line 294, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-    header.navigation .search-bar form {
-      position: relative; }
-      /* line 297, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-      header.navigation .search-bar form input[type=search] {
-        background: white;
-        border-radius: 6px;
-        border: 1px solid #f2f2f2;
-        color: #999;
-        font-size: 0.9em;
-        font-style: italic;
-        margin: 0;
-        padding: 0.5em 0.8em;
-        width: 100%; }
-        @media screen and (min-width: 53.75em) {
-          /* line 297, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-          header.navigation .search-bar form input[type=search] {
-            width: 100%; } }
-      /* line 314, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-      header.navigation .search-bar form button[type=submit] {
-        background: white;
-        border: none;
-        bottom: 0.3em;
-        left: auto;
-        outline: none;
-        padding: 0 9px;
-        position: absolute;
-        right: 0.3em;
-        top: 0.3em;
-        color: #ddd; }
-        /* line 326, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-        header.navigation .search-bar form button[type=submit] img {
-          height: 12px;
-          opacity: 0.7;
-          padding: 1px; }
-    @media screen and (min-width: 53.75em) {
-      /* line 285, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-      header.navigation .search-bar {
-        display: inline-block;
-        position: relative;
-        width: 16em; }
-        /* line 339, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/header.scss */
-        header.navigation .search-bar input {
-          display: block; } }
-
-/* line 5, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/footer.scss */
-.footer {
-  padding: 1em;
-  padding-bottom: 0px;
-  padding-top: 2em;
-  width: 100%;
+/* line 36, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
+.btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  -webkit-font-smoothing: antialiased;
+  background-color: #EA6723;
+  border-radius: 0px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
   display: inline-block;
-  background-color: white;
-  color: #333;
-  line-height: 1em; }
-  /* line 18, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/footer.scss */
-  .footer .footer-wrapper {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto; }
-    /* line 20, /home/oren/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bourbon-4.2.3/app/assets/stylesheets/addons/_clearfix.scss */
-    .footer .footer-wrapper::after {
-      clear: both;
-      content: "";
-      display: table; }
-    /* line 20, /home/oren/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bourbon-4.2.3/app/assets/stylesheets/addons/_clearfix.scss */
-    .footer .footer-wrapper::after {
-      clear: both;
-      content: "";
-      display: table; }
-    /* line 22, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/footer.scss */
-    .footer .footer-wrapper .footer-logo {
-      margin-right: 1em;
-      margin-bottom: 1em;
-      position: relative;
-      top: -1em; }
-      @media screen and (min-width: 53.75em) {
-        /* line 22, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/footer.scss */
-        .footer .footer-wrapper .footer-logo {
-          float: left;
-          margin-bottom: 0px; } }
-      /* line 33, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/footer.scss */
-      .footer .footer-wrapper .footer-logo img {
-        height: 3em; }
-    /* line 38, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/footer.scss */
-    .footer .footer-wrapper .copyright {
-      float: left; }
-    /* line 42, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/footer.scss */
-    .footer .footer-wrapper .attribution {
-      font-size: 0.8em;
-      float: right; }
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+  /* line 55, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
+  .btn:hover, .btn:focus {
+    background-color: #b04711;
+    color: #fff; }
+  /* line 61, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
+  .btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
