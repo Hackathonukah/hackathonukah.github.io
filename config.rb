@@ -1,4 +1,5 @@
 require "slim"
+Slim::Engine.disable_option_validator!
 require "extensions/views"
 
 activate :views
