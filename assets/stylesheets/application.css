@@ -3049,15 +3049,16 @@ body {
       color: white; }
     /* line 22, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
     .coming-soon .container h1 {
+      padding-top: 0.5em;
       font-size: 2em; }
-    /* line 26, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
+    /* line 27, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
     .coming-soon .container #mailing-list-btn {
       font-size: 1.5em; }
-    /* line 30, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
+    /* line 31, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
     .coming-soon .container .last-year {
       font-size: 0.8em; }
 
-/* line 36, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
+/* line 37, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
 .btn {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -3080,11 +3081,11 @@ body {
   user-select: none;
   vertical-align: middle;
   white-space: nowrap; }
-  /* line 55, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
+  /* line 56, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
   .btn:hover, .btn:focus {
     background-color: #b04711;
     color: #fff; }
-  /* line 61, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
+  /* line 62, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
   .btn:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
