@@ -3066,7 +3066,7 @@ body {
   -o-appearance: none;
   appearance: none;
   -webkit-font-smoothing: antialiased;
-  background-color: #EA6723;
+  background-color: #03b698;
   border-radius: 0px;
   border: none;
   color: #fff;
@@ -3083,7 +3083,7 @@ body {
   white-space: nowrap; }
   /* line 56, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
   .btn:hover, .btn:focus {
-    background-color: #b04711;
+    background-color: #026b59;
     color: #fff; }
   /* line 62, /home/oren/code/hackathonukah/hackathonukah.github.io/source/assets/stylesheets/_global.scss */
   .btn:disabled {
