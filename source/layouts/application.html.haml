@@ -4,7 +4,11 @@
     %meta{charset: "utf-8"}
     %meta{content: "IE=edge,chrome=1", http: {equiv: "X-UA-Compatible"}}
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
-    %title= current_page.data.title || "The Middleman"
+    %title= current_page.data.title || "Hackathonukah"
+    %meta{name: "description", content: "Hackathonukah is an event production organization that creates fun, open, and overly-themed hackathons and technology events."}
+    %meta{name: "author", content: "Donny and Oren Kanner"}
+    %link{href: "http://hackathonukah.com", rel: "canonical"}
+    %link{href: "/assets/images/favicon.ico", rel: "shortcut icon"}
     = stylesheet_link_tag "application"
 
   %body{class: page_classes}

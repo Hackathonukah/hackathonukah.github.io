@@ -1,6 +1,4 @@
 .navigation {
-  // $large-screen: 50em !default;
-  // $medium-screen: 30em !default;
   // Variables
   $nav-height: 60px;
   $nav-padding: 1em;
@@ -14,6 +12,8 @@
   min-height: $nav-height;
   width: 100%;
   position: fixed;
+  z-index: 9999;
+  top: -0px;
 
   // Mobile view
   .navigation-menu-button {
