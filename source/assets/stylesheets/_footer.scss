@@ -1,0 +1,98 @@
+.footer {
+  // variables
+  $base-spacing: 1.5em !default;
+  $footer-background: $light-gray;
+  $footer-color: $dark-gray;
+  $footer-link-color: transparentize($footer-color, 0.6);
+
+  background: $footer-background;
+  display: inline-block;
+  padding: $base-spacing;
+  width: 100%;
+
+  .footer-wrapper {
+    @include clearfix;
+    @include outer-container();
+  }
+
+  .copy {
+    display: inline-block;
+    @include media($medium-screen) {
+      float: left;
+    }
+  }
+
+  ul {
+    line-height: 1.5em;
+    margin: 0 0 1em 0;
+    padding: 0;
+
+    @include media($medium-screen) {
+      float: left;
+      line-height: 1.8em;
+      margin-bottom: 0;
+      margin-left: 1em;
+    }
+  }
+
+  ul li {
+    list-style: none;
+    padding-right: 1em;
+
+    @include media($medium-screen) {
+      display: inline;
+      text-align: left;
+    }
+  }
+
+  ul li a {
+    color: $footer-link-color;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: transparentize($footer-color, 0);
+    }
+  }
+
+  .footer-secondary {
+    @include media($medium-screen) {
+      float: right;
+    }
+
+    li {
+      font-size: 0.8em;
+    }
+
+    ul.footer-social {
+      margin: 1em 0 0 0;
+
+      @include media($medium-screen) {
+        float: right;
+        margin-top: 0;
+      }
+
+      li {
+        float: left;
+        font-size: 1em;
+        line-height: 0;
+        margin: 0;
+        padding-right: 0.7em;
+
+        &:last-child {
+          padding-right: 0;
+        }
+
+        a {
+          text-decoration: none;
+          color: $footer-link-color;
+
+          &:hover,
+          &:focus {
+            color: transparentize($footer-color, 0);
+          }
+        }
+      }
+    }
+  }
+}

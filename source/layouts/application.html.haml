@@ -9,12 +9,13 @@
     %meta{name: "author", content: "Donny and Oren Kanner"}
     %link{href: "http://hackathonukah.com", rel: "canonical"}
     %link{href: "/assets/images/favicon.ico", rel: "shortcut icon"}
+    %link{href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css", rel: "stylesheet"}
     = stylesheet_link_tag "application"
 
   %body{class: page_classes}
     %header.navigation{role: "banner"}
       .navigation-wrapper
-        %a.logo{href: "javascript:void(0)"}
+        %a.logo{href: "#"}
           %img{src: "/assets/images/logo.png", alt: "Hackathonukah"}
         %a.navigation-menu-button#js-mobile-menu{href: "javascript:void(0)"} Menu
         %nav{role: "navigation"}
@@ -26,6 +27,18 @@
             %li.nav-link
               %a{href: "#contact"} Contact Us
     = yield
+
+    %footer.footer{role: "contentinfo"}
+      .footer-wrapper
+        .copy &copy; 2016 Hackathonukah, LLC
+        .footer-secondary
+          %ul.footer-social
+            %li
+              %a{href: "https://twitter.com/Hackathonukah"}
+                %i.fa.fa-twitter.fa-lg
+            %li
+              %a{href: "https://www.facebook.com/Hackathonukah"}
+                %i.fa.fa-facebook.fa-lg
     = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
     = javascript_include_tag "application"
     = google_analytics_tag
