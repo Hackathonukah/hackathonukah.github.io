@@ -1,154 +1,132 @@
 .navigation {
-  $large-screen: 50em !default;
-  $medium-screen: 30em !default;
+  // $large-screen: 50em !default;
+  // $medium-screen: 30em !default;
+  // Variables
+  $nav-height: 60px;
+  $nav-padding: 1em;
+  $nav-bg: white;
+  $nav-color: transparentize($dark-gray, 0.3);
+  $nav-color-hover: $dark-gray;
+  $nav-active-link-color: transparentize($dark-gray, 0.5);
 
+  background-color: $nav-bg;
+  border-bottom: 1px solid darken($nav-bg, 10);
+  min-height: $nav-height;
+  width: 100%;
+  position: fixed;
 
   // Mobile view
   .navigation-menu-button {
+    color: $nav-color;
     display: block;
     float: right;
+    line-height: $nav-height;
     margin: 0;
-    padding-top: 0.5em;
+    padding-right: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:focus,
+    &:hover {
+      color: $nav-color-hover;
+    }
 
     @include media ($medium-screen) {
       display: none;
     }
   }
 
-
   // Nav menu
   .navigation-wrapper {
     @include clearfix;
+    @include outer-container();
     position: relative;
   }
 
   .logo {
     float: left;
+    max-height: $nav-height;
+    padding-left: $nav-padding;
+    padding-right: 2em;
 
-    @include
-    media
-    ($medium-screen)
-    {
-      float:
-      none;
-      text-align:
-      center;
-      display:
-      block;
+    @include media($medium-screen) {
+      float: none;
+      text-align: center;
+      display: block;
     }
 
-    @include
-    media
-    ($large-screen)
-    {
-      float:
-      left;
+    @include media($large-screen) {
+      float: left;
     }
 
-    img
-    {
-      max-height:
-      2em;
-      padding-right:
-      1em;
+    img {
+      max-height: $nav-height;
+      padding-right: 0.8em 0;
     }
   }
 
-  nav
-  {
-    float:
-    none;
+  nav {
+    float: none;
+    min-height: $nav-height;
 
-    @include
-    media
-    ($medium-screen)
-    {
-      float:
-      left;
-      text-align:
-      center;
-      line-height:
-      1.5em;
-      padding-top:
-      0.3em;
+    @include media($medium-screen) {
+      float: right;
+      text-align: center;
+      line-height: 1.5em;
+      padding-top: 0.3em;
     }
   }
 
-  ul.navigation-menu
-  {
-    clear:
-    both;
-    display:
-    none;
-    margin:
-    0
-    auto;
-    overflow:
-    visible;
-    padding:
-    0;
-    width:
-    100%;
+  ul.navigation-menu {
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
 
-    @include
-    media
-    ($medium-screen)
-    {
-      display:
-      block;
-      margin:
-      0;
-      padding:
-      0;
+    @include media($medium-screen) {
+      display: inline;
+      margin: 0;
+      padding: 0;
     }
 
-    &.show
-    {
-      display:
-      block;
+    &.show {
+      display: block;
     }
   }
 
+  // Nav items
+  ul li.nav-link {
+    background: $nav-bg;
+    display: block;
+    line-height: $nav-height;
+    overflow: hidden;
+    padding-right: 0.8em;
+    text-align: right;
+    width: 100%;
 
-  // Nav
-  // items
-  ul
-  li.nav-link
-  {
-    display:
-    block;
-    text-align:
-    right;
-    width:
-    100%;
-
-    @include
-    media
-    ($medium-screen)
-    {
-      background:
-      transparent;
-      display:
-      inline;
-      text-decoration:
-      none;
-      width:
-      auto;
+    @include media($medium-screen) {
+      background: transparent;
+      display: inline;
+      line-height: $nav-height;
+      text-decoration: none;
+      width: auto;
     }
   }
 
-  li.nav-link
-  a
-  {
-    display:
-    inline-block;
+  li.nav-link a {
+    display: inline-block;
+    color: $nav-color;
+    text-decoration: none;
 
-    @include
-    media
-    ($large-screen)
-    {
-      padding-right:
-      1em;
+    @include media($large-screen) {
+      padding-right: 1em;
+    }
+
+    &:focus,
+    &:hover {
+      color: $nav-color-hover;
     }
   }
 }
