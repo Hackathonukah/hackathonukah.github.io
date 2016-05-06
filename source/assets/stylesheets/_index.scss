@@ -1,0 +1,100 @@
+.hero {
+  margin-top: 60px;
+  align-items: center;
+  background: image_url("assets/images/hero-image.png");
+  background-position: right;
+  background-size: none;
+  display: flex;
+  justify-content: center;
+  min-height: 25em;
+  padding: 2em;
+
+  @include media($large-screen) {
+    background-size: cover;
+    background-position: left;
+    justify-content: flex-end;
+  }
+
+  .hero-wrapper {
+    @include clearfix;
+    @include outer-container();
+    position: relative;
+    width: 100%;
+  }
+
+  .hero-content {
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+    color: white;
+
+    .hero-text {
+      font-size: 2em;
+    }
+  }
+}
+
+.section {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  width: 100%;
+
+  &#about {
+    background-color: $orange;
+    color: white;
+  }
+
+  &#events {
+    background-color: white;
+  }
+
+  &#contact {
+    background-color: $green;
+    color: white;
+  }
+
+  .section-wrapper {
+    @include outer-container();
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .section-text {
+    font-size: 1.4em;
+  }
+
+  .section-wrapper .grid-item-lines {
+    @include clearfix;
+
+    .event-box {
+      background: transparentize($dark-gray, 0.4);
+      float: left;
+      height: 14em;
+      outline: none;
+      overflow: hidden;
+      padding: 2em;
+      text-decoration: none;
+      color: white;
+      transition: all 0.2s ease-in-out;
+      text-align: center;
+      @include span-columns(12);
+
+      @include media($medium-screen) {
+        @include span-columns(6);
+      }
+
+      &:focus,
+      &:hover {
+        background: $dark-gray;
+      }
+
+      img {
+        display: block;
+        width: 75%;
+        margin: 1em auto;
+      }
+    }
+  }
+}
