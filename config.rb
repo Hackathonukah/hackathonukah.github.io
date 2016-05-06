@@ -25,3 +25,7 @@ activate :deploy do |deploy|
   deploy.deploy_method = :git
   deploy.branch = "master"
 end
+
+activate :google_analytics do |ga|
+  ga.tracking_id = "UA-52273145-3"
+end
