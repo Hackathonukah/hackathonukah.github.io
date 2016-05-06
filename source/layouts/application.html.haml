@@ -8,6 +8,17 @@
     = stylesheet_link_tag "application"
 
   %body{class: page_classes}
+    %header.navigation{role: "banner"}
+      .navigation-wrapper
+        %a.logo{href: "javascript:void(0)"}
+          %img{src: "/assets/images/logo.png", alt: "Hackathonukah"}
+        %a.navigation-menu-button#js-mobile-menu{href: "javascript:void(0)"} Menu
+        %nav{role: "navigation"}
+          %ul.navigation-menu.show#js-navigation-menu
+            %li.nav-link
+              %a{href: "#about"} About
+              %a{href: "#events"} Events
+              %a{href: "#contact"} Contact Us
     = yield
     = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
     = javascript_include_tag "application"
