@@ -13,32 +13,10 @@
     = stylesheet_link_tag "application"
 
   %body{class: page_classes}
-    %header.navigation{role: "banner"}
-      .navigation-wrapper
-        %a.logo{href: "#"}
-          %img{src: "/assets/images/logo.png", alt: "Hackathonukah"}
-        %a.navigation-menu-button#js-mobile-menu{href: "javascript:void(0)"} Menu
-        %nav{role: "navigation"}
-          %ul.navigation-menu.show#js-navigation-menu
-            %li.nav-link
-              %a{href: "#about"} About
-            %li.nav-link
-              %a{href: "#events"} Events
-            %li.nav-link
-              %a{href: "#contact"} Contact Us
+    = partial "partials/navbar"
     = yield
+    = partial "partials/footer"
 
-    %footer.footer{role: "contentinfo"}
-      .footer-wrapper
-        .copy &copy; 2016 Hackathonukah, LLC
-        .footer-secondary
-          %ul.footer-social
-            %li
-              %a{href: "https://twitter.com/Hackathonukah"}
-                %i.fa.fa-twitter.fa-lg
-            %li
-              %a{href: "https://www.facebook.com/Hackathonukah"}
-                %i.fa.fa-facebook.fa-lg
     = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
     = javascript_include_tag "application"
     = google_analytics_tag
