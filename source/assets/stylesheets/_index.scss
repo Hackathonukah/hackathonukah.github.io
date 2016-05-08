@@ -38,6 +38,7 @@
   padding-top: 5em;
   padding-bottom: 5em;
   width: 100%;
+  @include padding(null 1em null 1em);
 
   &#about {
     background-color: $orange;
@@ -62,7 +63,7 @@
   }
 
   .section-text {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
   .section-wrapper .grid-item-lines {
@@ -99,14 +100,21 @@
     }
   }
 
-  #contact-form {
-    color: $dark-gray;
+  .contact-form {
+    @include media($medium-screen) {
+      @include span-columns(8);
+      @include shift(2);
+    }
 
-    input[type="submit"] {
-      background: $dark-gray;
+    #contact-form {
+      color: $dark-gray;
 
-      &:hover, &:focus {
-        background: lighten($dark-gray, 10%);
+      input[type="submit"] {
+        background: $dark-gray;
+
+        &:hover, &:focus {
+          background: lighten($dark-gray, 10%);
+        }
       }
     }
   }
