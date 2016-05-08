@@ -27,4 +27,13 @@ title: Hackathonukah // We don't hack on Shabbos
 .section#contact
   .section-wrapper
     %h1.section-title Contact Us
+    .contact-form
+      %form{action: "https://formspree.io/hackathonukah@gmail.com", method: "POST"}
+        %input{type: "hidden", name: "_subject", value: "Contact Form Submission"}
+        %input{type: "text", name: "_gotcha", style: "display: none;"}
+        %input{type: "text", name: "name", placeholder: "Your Name", required: true}
+        %input{type: "text", name: "_replyto", placeholder: "Your E-mail", required: true}
+        %textarea{name: "message", cols: "30", rows: "6", placeholder: "Your message goes here, bonus points if you include a pun!", required: true}
+        %input{type: "submit", value: "Send"}
+
 

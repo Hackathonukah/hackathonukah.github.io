@@ -98,4 +98,16 @@
       }
     }
   }
+
+  #contact-form {
+    color: $dark-gray;
+
+    input[type="submit"] {
+      background: $dark-gray;
+
+      &:hover, &:focus {
+        background: lighten($dark-gray, 10%);
+      }
+    }
+  }
 }
