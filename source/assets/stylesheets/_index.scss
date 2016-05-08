@@ -31,6 +31,38 @@
     .hero-text {
       font-family: $base-font-family;
     }
+
+    .hero-btns {
+      @include span-columns(8);
+      @include shift(2);
+      margin-top: 1em;
+
+      .hero-btn {
+        @include padding(1.3em);
+        @include margin(0.5em);
+        color: white;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        display: inline-block;
+        max-width: 10em;
+
+        &#mailchimp-btn {
+          background: $green;
+
+          &:hover, &:focus {
+            background: lighten($green, 10%);
+          }
+        }
+
+        &#contact-btn {
+          background: $blue;
+
+          &:hover, &:focus {
+            background: lighten($blue, 10%);
+          }
+        }
+      }
+    }
   }
 }
 
