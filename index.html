@@ -37,19 +37,23 @@
     <div class='hero'>
       <div class='hero-wrapper'>
         <div class='hero-content'>
-          <h1 class='hero-text'>Hackathonukah creates opportunities for technology-minded people to learn new skills in a collaborative, engaging, and overwhelmingly-themed social environment.</h1>
+          <h1 class='hero-text'>Hackathonukah creates themed opportunities for tech-minded people to learn new skills in a fun, collaborative, and engaging environment.</h1>
+          <div class='hero-btns'>
+            <a class='hero-btn' href='http://eepurl.com/40ReD' id='mailchimp-btn'>Sign up for updates</a>
+            <a class='hero-btn' href='#contact' id='contact-btn'>Contact us for more info</a>
+          </div>
         </div>
       </div>
     </div>
     <div class='section' id='about'>
       <div class='section-wrapper'>
-        <h1 class='section-title'>About Us</h1>
-        <p class='section-text'>We're two brothers who couldn't go to hackathons on Saturdays so now we organize them, plain and simple.</p>
+        <h1 class='section-title'>We're two brothers who couldn't go to hackathons on Saturdays. <br />Now we organize them.</h1>
+        <p class='section-text'>Hackathonukah was born when Donny and Oren Kanner decided to "solve their own problem," namely, the lack of Sabbath observer friendly hackathons, and created the Hackathon of Lights. We're passionate about creating engaging events accessible to people of all backgrounds and technical skill levels. Our goal is to build a community that appreciates excessive puns, continuous learning, and doesn't take itself too seriously.</p>
       </div>
     </div>
     <div class='section' id='events'>
       <div class='section-wrapper'>
-        <h1 class='section-title'>Our Events</h1>
+        <h1 class='section-title'>An artisanally-crafted selection of our past events.</h1>
         <div class='grid-item-lines'>
           <a class='event-box' href='2014' id='hackathonukah2014'>
             <img alt='Hackathonukah 2014' src='assets/images/hackathonukah2014.png'>
@@ -64,7 +68,17 @@
     </div>
     <div class='section' id='contact'>
       <div class='section-wrapper'>
-        <h1 class='section-title'>Contact Us</h1>
+        <h1 class='section-title'>Ask a question, give a suggestion, or just say hello.</h1>
+        <div class='contact-form'>
+          <form action='https://formspree.io/hackathonukah@gmail.com' id='contact-form' method='POST'>
+            <input name='_subject' type='hidden' value='Contact Form Submission'>
+            <input name='_gotcha' style='display: none;' type='text'>
+            <input name='name' placeholder='Your Name' required type='text'>
+            <input name='_replyto' placeholder='Your E-mail' required type='text'>
+            <textarea cols='30' name='message' placeholder='Your message goes here, bonus points if you include a pun!' required rows='6'></textarea>
+            <input type='submit' value='Send'>
+          </form>
+        </div>
       </div>
     </div>
     <footer class='footer' role='contentinfo'>
@@ -86,7 +100,7 @@
         </div>
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script src="assets/javascripts/application.js"></script>
     <script type="text/javascript">
       var _gaq = _gaq || [];
