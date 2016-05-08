@@ -3,7 +3,7 @@
   $base-spacing: 1.5em !default;
   $footer-background: $dark-gray;
   $footer-color: $light-gray;
-  $footer-link-color: transparentize($footer-color, 0.8);
+  $footer-link-color: transparentize($footer-color, 0.5);
 
   background: $footer-background;
   display: inline-block;

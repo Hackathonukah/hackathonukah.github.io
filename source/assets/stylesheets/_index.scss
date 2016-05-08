@@ -67,32 +67,33 @@
 
   .section-wrapper .grid-item-lines {
     @include clearfix;
+    text-align: center;
 
     .event-box {
-      background: transparentize($dark-gray, 0.4);
-      float: left;
-      height: 14em;
+      display: inline-block;
       outline: none;
       overflow: hidden;
-      padding: 2em;
       text-decoration: none;
+      @include padding(1em 2em 1.5em 1.5em);
       color: white;
       transition: all 0.2s ease-in-out;
-      text-align: center;
-      @include span-columns(12);
+      width: 75%;
 
       @include media($medium-screen) {
-        @include span-columns(6);
+        display: inline-block;
+        width: 30%;
+        @include margin(1em 2em null 2em);
       }
 
-      &:focus,
-      &:hover {
-        background: $dark-gray;
+      background: $dark-gray;
+
+      &:focus, &:hover {
+        background: transparentize($dark-gray, 0.3);
       }
 
       img {
         display: block;
-        width: 75%;
+        width: 80%;
         margin: 1em auto;
       }
     }

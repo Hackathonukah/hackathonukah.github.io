@@ -84,6 +84,7 @@
     overflow: visible;
     padding: 0;
     width: 100%;
+    text-transform: uppercase;
 
     @include media($medium-screen) {
       display: inline;
