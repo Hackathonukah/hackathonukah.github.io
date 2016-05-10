@@ -33,9 +33,12 @@
     }
 
     .hero-btns {
-      @include span-columns(8);
-      @include shift(2);
       margin-top: 1em;
+
+      @include media($medium-screen) {
+        @include span-columns(8);
+        @include shift(2);
+      }
 
       .hero-btn {
         @include padding(1.3em);
@@ -44,7 +47,11 @@
         font-size: 1.2em;
         text-transform: uppercase;
         display: inline-block;
-        max-width: 10em;
+        max-width: 90%;
+
+        @include media($medium-screen) {
+          max-width: 10em;
+        }
 
         &#mailchimp-btn {
           background: $green;
@@ -111,6 +118,7 @@
       color: white;
       transition: all 0.2s ease-in-out;
       width: 75%;
+      @include margin(null null 1em null);
 
       @include media($medium-screen) {
         display: inline-block;
